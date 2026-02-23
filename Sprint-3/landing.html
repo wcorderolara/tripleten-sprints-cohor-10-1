@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .website {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        .navigation, .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 16px;
+        }
+
+        .navigation {
+            font-size: 20px;
+            font-weight: bold;
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            padding: 32px 48px;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: end;
+        }
+
+        .main-content {
+            display: grid;
+            gap: 20px;
+            padding: 20px;
+            grid-template-columns: 250px 1fr;
+        }
+
+        .sidebar {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .footer {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="website">
+        <nav class="navigation">
+            <div>Landing Logo</div>
+            <ul class="nav-menu">
+                <li class="nav_item">Link 1</li>
+                <li class="nav_item">Link 2</li>
+                <li class="nav_item">Link 3</li>
+                <li class="nav_item">Link 4</li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <aside class="sidebar">
+                <h2>Sidebar</h2>
+                <p>This is the sidebar content.</p>
+            </aside>
+
+            <section class="content">
+                <article class="card">
+                    <h3>Card 1 Title</h3>
+                    <p>This is the content of Card 1.</p>
+                </article>
+                <article class="card">
+                    <h3>Card 2 Title</h3>
+                    <p>This is the content of Card 2.</p>
+                </article>
+                <article class="card">
+                    <h3>Card 3 Title</h3>
+                    <p>This is the content of Card 3.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Landing Page. All rights reserved.</p>
+        </footer>
+
+
+    </div>
+    
+</body>
+</html>
