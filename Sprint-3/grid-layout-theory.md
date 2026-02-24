@@ -85,3 +85,47 @@ grid-column: 1/3
 similar to grid-column but for rows
 
 grid-row: start_line/end_line
+
+## Grid Areas
+Are a powerful way to create layouts. Instead of positioning items by line numbers, you can name areas  and place items into them. This makes complex layouts easy to understand and modify.
+
+
+#### Defining Grid Areas
+*grid-template-areas* to define named areas in our grid. This property takes a string that visualizes your layout
+
+```css
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header header header"
+        "sidebar main aside"
+        "footer footer footer";
+}
+```
+
+#### Assigning items to Areas
+Once areas are defined, assign items using the *grid-area* property
+
+```css
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.footer {
+    grid-area: footer
+}
+```
