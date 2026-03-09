@@ -119,3 +119,74 @@ for explaining what your code does.
 - *Debugging*: Temporaly disable code without deleting it
 - *Collaboration*: Help team members understand your work
 
+## Primitive Data Types
+Today is Monday = Strings
+125.65 = Number
+True or False = Boolean
+a 1 # = characters
+
+### Numbers
+JS has one type of number (integer, decimals). All numbers are stored as 64-bits
+10, 25.3
+
+#### Arithmetic Operators
+Perform Mathemathical calculations.
+- Adition
+    (+) => 25 + 3 => 28
+- Substraction
+    (-) => 14 - 6 => 8
+- Multiplication
+    (*) => 25 * 4 => 100
+- Division
+    (/) => 25 / 5 = 5
+- Modulus (remainder after division)
+    (%) => 25 / 4 = 5
+- Exponentiation
+    (**) => 5 ** 2 = 25
+         => 5 ** 3 = 125
+
+#### PEMDAS
+1. Parentheses (5 - 3)
+2. Exponents **
+3. Multiplication (*) and Division (/) => left to right
+4. Addition (+) and Substractions (-) => left to right
+
+``` js
+Examples
+2 + 3 * 4 = 14;
+(2 + 3) * 4 = 20
+10 + 5 * 2 - 3 = 17;
+```
+
+### Strings
+Strings are sequences of characters used to represent text. In JS, strings can contain letters, numbers, symbols and spaces.
+
+```js
+
+'Hello World' => Traditional way too / interchangeable with double quotes.
+"Hello World" => Traditional way / interchangeable with single quotes.
+`Hello World` => Template Literals
+    Modern way, allows embedded javascript expressions
+    `The sum of 3 + 5 is: ${3+5}`
+```
+
+#### Scape Characters
+Special characters that needs backslah '\' to be included in strings:
+
+```js
+'"Lorem ipsum", dolor sit it\'s amet consectetur adipisicing elit. Minima laboriosam iste illum omnis rerum quibusdam dolor neque amet eos beatae quasi et tempora ab iure! Eligendi exercitationem qui assumenda minima?'
+```
+
+#### Case Conversions
+JavaScript is Case Sensitive
+
+#### Split String
+The split() method divides a string into substrings (arrays)
+
+#### Finding Substring
+indexOf() find the position of the first occurrence of the
+text passed as argument.
+
+0 1 2 3 4 5 6 7 8 9  10 11 <===== INDEX
+J A V A S C R I P T     I S  A W E S O M E !
+1 2 3 4 5 6 7 8 9 10 11 12
