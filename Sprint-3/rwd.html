@@ -13,9 +13,10 @@
         }
 
         .container {
-            max-width: 1600px;
+            max-width: 1200px;
             width: 100%;
             background-color: yellow;
+            margin: 0 auto;
         }
         .box {
             width: 75%;
@@ -27,6 +28,53 @@
             font-size: 1.5rem;
             color: white;
             font-weight: bold
+        } 
+
+        @media (max-width: 768px) {
+            .container {
+                background-color: lightblue;
+            }
+
+            .box {
+                width: 90%;
+                margin: 0 auto;
+                background: linear-gradient(to bottom, rgb(230, 90, 90), rgb(210, 77, 99))
+            }
+
+            .text {
+                font-size: 1.25rem;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 675px) {
+            .container {
+                background-color: #333;
+            }
+
+            .box {
+                width: 85%;
+                margin: 0 auto;
+                background: linear-gradient(to bottom, rgb(29, 96, 230), rgb(76, 38, 243))
+            }
+
+            .text {
+                font-size: 1.15rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                background-color: transparent;
+            }
+
+            .box {
+                width: 100%;
+                background: linear-gradient(to bottom, rgb(26, 129, 26), rgb(24, 230, 59))
+            }
+
+            .text {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
