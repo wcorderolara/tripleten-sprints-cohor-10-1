@@ -4,7 +4,7 @@ We had separate websites:
 - Mobile Devices (iPhone)
 - Medium Mobile Devices (iPad)
 - Smart TVs (Very Very Very Large screens)
-- Smart watches (ver very very small screens)
+- Smart watches (very very very small screens)
 
 2010 Ethan Marcotte, Responsive Web Design Pattern
 build a single website that automatically responds and adpats its layout to fit any screen ti's viewed on.
@@ -46,4 +46,4 @@ Responsive Web Design (RWD) is an approach to web development that makes web pag
     height: 200px;
     width: 75%;
 }
-```
+
