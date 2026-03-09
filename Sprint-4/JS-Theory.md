@@ -190,3 +190,12 @@ text passed as argument.
 0 1 2 3 4 5 6 7 8 9  10 11 <===== INDEX
 J A V A S C R I P T     I S  A W E S O M E !
 1 2 3 4 5 6 7 8 9 10 11 12
+
+### Booleans
+Represents True or False value.
+
+### Undefined
+Represents a variable that has been declared but not assigned a value.
+
+### Null
+Represents an intentional absence of value;
