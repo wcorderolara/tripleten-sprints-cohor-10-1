@@ -199,3 +199,71 @@ Represents a variable that has been declared but not assigned a value.
 
 ### Null
 Represents an intentional absence of value;
+
+## Variables
+### What are Variables?
+Are Containers that store data values.
+
+### Three Ways to Declare Variables
+#### 1 - LET - Modern, Recommended for Most Cases
+```js
+let age = 32;
+let name = 'John Doe';
+let email = 'johndoe@gmail.com';
+let country = 'United States';
+let isMarried = false;
+```
+
+##### Characteristics
+- Can be reassigned
+- Cannot be redeclared in the same scope
+- Block-scope variables (only exists within a block of code)
+- Local Variables
+
+#### 2 - VAR - Old way
+```js
+var age = 32;
+var name = 'John Doe';
+var email = 'johndoe@gmail.com';
+var country = 'United States';
+var isMarried = false;
+```
+##### Characteristics
+- Can be reassigned
+- Cannot be redeclared in the same scope
+- Global Variables
+
+
+#### 3 - CONST - Recommended for Unchanging Values
+Used when the variable value should NOT change
+
+```js
+const taxFeeGT = 0.12;
+```
+
+#### Naming Rules
+Every name could starts with:
+- a letter
+- underscore (_)
+- Symbol ($, @, #)
+
+Every name could end with numbers:
+    - age2
+    - user143
+
+The name must be declared using camelCase naming Convention
+- name, age, country, status, color
+- userName, userAge, countryBirth, maritalStatus, backgroundColor
+
+```js
+let 2age = 25; // names cannot starts with number
+let first-name = 'john'; // we cannot use hyphens to naming variables
+let let = 'value'; //Cannot use key or reserverd words
+
+let, const, break, case, if, continue, switch, var, else, for, while, function, return,
+try, catch, class, etc...
+```
+
+```js
+const ALL_UPPERCASE_WORDS = 'SNAKE_CASE';
+```
