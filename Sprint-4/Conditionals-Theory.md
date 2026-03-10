@@ -1,4 +1,4 @@
-## Conditionals and Loops
+# Conditionals and Loops
 ### What are Conditionals?
 Conditionals allows your program to make decisions. Conditionals let your code execute
 different actions based on whether conditions are true or false.
@@ -67,4 +67,49 @@ true != 1 ---> false
  7 <= 10 ---> true
 12 <= 8 ---> false
  7 <= 7 ---> true
+```
+
+# Conditional Statements
+Execute different code blocks based on whether conditions are true or false
+
+## The *if* Statement
+Executes code only when a condition is *true*
+
+```js
+// Basic Syntax
+if (condition to evaluate) {
+    // Code
+    // will runs only if the condition to evaluate is TRUE
+}
+```
+
+### The *if...else* statement
+Provides an alternative when the condition is false:
+```js
+// Basic Syntax
+if (condition to evaluate) {
+    // Code
+    // will runs only if the condition to evaluate is TRUE
+} else {
+    // Code
+    // will be executed if the condition it's FALSE
+}
+```
+
+### The *if...else if... else* statement
+Checks multiple conditions in the same sequence.
+```js
+// Basic Syntax
+if (condition-1) {
+    // Code
+    // will runs only if the condition-1 to evaluate is TRUE
+} else if (condition-2) {
+    // Code
+    // will be executed if condition-1 is FALSE but condition-2 is TRUE
+} else if (condition-n) {
+    // Code
+} else {
+    // Code
+    // will be executed if the previous conditions ALL OF THEM ARE FALSE
+}
 ```
