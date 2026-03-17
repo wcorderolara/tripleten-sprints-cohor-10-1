@@ -113,3 +113,40 @@ if (condition-1) {
     // will be executed if the previous conditions ALL OF THEM ARE FALSE
 }
 ```
+
+## The Switch Statement
+Efficient for checking one value against multiple possible matches:
+
+```js
+switch (expression) {
+    case value1:
+        //Code runs if expression === value1
+        break;
+    case value2:
+        //Code runs if expression === value2
+        break;
+    case valueN:
+        //Code runs if expression === valueN
+        break;
+    default:
+        //Code runs if no cases match with expression
+}
+
+```
+
+## Logical Operators
+Logical Operators combine multiple conditions or invert boolean values
+
+### AND Operator (&&)
+Returns *true* only if ALL conditions are true;
+
+### OR Operator (||)
+Returns *true* if AT LEAST ONE condition is true;
+
+### NOT Operator (!)
+Inverts a boolean value (true becomes false, false becomes true);
+
+### Operator Precedence
+1. *!* (NOT) --- highest Priority
+2. *&&* (AND)
+3. *||* (OR) --- lowest Priority
